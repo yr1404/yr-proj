@@ -4,8 +4,41 @@
     font-family: sans-serif;
 }
 
+.list {
+    padding-top: 13px;
+    display: flex;
+    flex: 1;
+    ;
+}
+
+.list li {
+    list-style-type: none;
+    margin-left: 30px;
+    padding: 6px 16px;
+    text-align: right;
+}
+
+.cname {
+    padding-top: 8px;
+}
+
 .header #navbar {
     width: 85%;
-    margin:auto;
+    margin: auto;
     display: flex;
+}
+
+.col {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex-basis: 100%;
+        text-align: center;
+    }
 }

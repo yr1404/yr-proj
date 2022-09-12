@@ -6,6 +6,11 @@
 
 .header #navbar {
     width: 85%;
-    margin:auto;
+    margin: auto;
     display: flex;
+}
+
+.leftt,
+.righti {
+    flex-basis: 50%;
 }

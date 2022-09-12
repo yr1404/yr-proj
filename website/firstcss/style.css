@@ -4,6 +4,21 @@
     font-family: sans-serif;
 }
 
+.list {
+    padding-top: 13px;
+    display: flex;
+    flex: 1;
+}
+
+.list li {
+    margin-left: 30px;
+    padding: 6px 16px;
+}
+
+.cname {
+    padding-top: 8px;
+}
+
 .header #navbar {
     width: 85%;
     margin: auto;

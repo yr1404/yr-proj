@@ -28,17 +28,26 @@
     display: flex;
 }
 
-.col {
+.row {
     display: flex;
+    /* float: left; */
 }
 
-.column {
+.column1 {
+    /* width: 50%; */
     flex: 50%;
+    text-align: center;
 }
 
-@media screen and (max-width: 800px) {
+.column2 {
+    /* width: 50%; */
+    flex: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
     .column {
-        flex-basis: 100%;
+        flex: 100%;
         text-align: center;
     }
 }

@@ -16,6 +16,7 @@
     flex: 1;
     padding-left: 400px;
     object-fit: contain;
+    white-space: nowrap;
 }
 
 .list li {
@@ -143,6 +144,11 @@ h3 {
     padding-block: 20px;
 }
 
+.col-test:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
 .foot {
     margin-top: 100px;
     margin-bottom: 30px;
@@ -171,7 +177,7 @@ h3 {
     transform: translateY(-2px);
 }
 
-@media(max-width: 700px) {
+@media(max-width: 1333px) {
     .row,
     .row1,
     .row3 {

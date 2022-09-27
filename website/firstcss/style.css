@@ -1,28 +1,42 @@
+body {
+    overflow-x: hidden;
+}
+
 .header {
+    display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: sans-serif;
     /* border-bottom: 1px solid black; */
     box-shadow: 0px 4px 3px -1px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    position: -webkit-sticky;
+    z-index: 1;
 }
 
 .im1 {
     object-fit: contain;
 }
 
+.navbar {
+    flex: 10%;
+}
+
 .list {
     padding-top: 7px;
     display: flex;
     flex: 1;
-    padding-left: 400px;
     white-space: nowrap;
-    float: right;
 }
 
 .list li {
     list-style-type: none;
     margin-left: 10px;
     padding: 2px 28px;
+    flex-grow: 10;
+    float: right;
 }
 
 a {
@@ -121,17 +135,22 @@ h3 {
     font-family: 'comfortaa', sans-serif;
     font-weight: 100;
     font-size: 30px;
-    position: relative;
     padding: auto;
 }
 
 .col:hover {
     transform: translateY(-10px);
     transition-duration: 0.5s;
+    z-index: 0;
 }
 
+<<<<<<< HEAD
 .test {
     margin-top: 50px;
+=======
+#test {
+    margin-top: 150px;
+>>>>>>> ee02e27643abcf7e3cc7556fe7b5a79b3903757d
 }
 
 .row3 {
@@ -153,7 +172,7 @@ h3 {
     transition: 1s;
 }
 
-.foot {
+#foot {
     margin-top: 100px;
     margin-bottom: 30px;
 }
@@ -181,7 +200,7 @@ h3 {
     transform: translateY(-2px);
 }
 
-@media(max-width: 1333px) {
+@media(max-width: 1240px) {
     .row,
     .row1,
     .row3 {
@@ -193,5 +212,26 @@ h3 {
     }
     .col-foot-right {
         padding-block: 10px;
+    }
+    .list li {
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+    .list .list {
+        padding-right: 15px;
+    }
+}
+
+.bars {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 1040px) {
+    .list li {
+        visibility: hidden;
+    }
+    .bars {
+        visibility: visible;
+        float: right;
     }
 }

@@ -144,7 +144,7 @@ h3 {
     z-index: 0;
 }
 
-.test {
+#test {
     margin-top: 150px;
 }
 
@@ -167,7 +167,7 @@ h3 {
     transition: 1s;
 }
 
-.foot {
+#foot {
     margin-top: 100px;
     margin-bottom: 30px;
 }
@@ -195,7 +195,7 @@ h3 {
     transform: translateY(-2px);
 }
 
-@media(max-width: 1195px) {
+@media(max-width: 1240px) {
     .row,
     .row1,
     .row3 {
@@ -217,8 +217,16 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 995px) {
+.bars {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 1040px) {
     .list li {
         visibility: hidden;
+    }
+    .bars {
+        visibility: visible;
+        float: right;
     }
 }

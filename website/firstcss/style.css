@@ -144,7 +144,11 @@ h3 {
     z-index: 0;
 }
 
+<<<<<<< HEAD
 #test {
+=======
+.test {
+>>>>>>> afd4151e586f1c38beaeb5b4703cf667a78f4478
     margin-top: 50px;
 }
 
@@ -230,10 +234,11 @@ h3 {
 }
 
 .bars {
-    visibility: hidden;
+    display: none;
 }
 
 @media only screen and (max-width: 1040px) {
+<<<<<<< HEAD
     .li1 {
         visibility: hidden;
     }
@@ -242,5 +247,14 @@ h3 {
     }
     .li2{
         flex: 1;
+=======
+    .list li {
+        display: none;
+    }
+    .bars {
+        display: block;
+        float: right;
+        padding-right: 20px;
+>>>>>>> afd4151e586f1c38beaeb5b4703cf667a78f4478
     }
 }

@@ -144,13 +144,8 @@ h3 {
     z-index: 0;
 }
 
-<<<<<<< HEAD
-.test {
-    margin-top: 50px;
-=======
 #test {
-    margin-top: 150px;
->>>>>>> ee02e27643abcf7e3cc7556fe7b5a79b3903757d
+    margin-top: 50px;
 }
 
 .row3 {
@@ -222,16 +217,30 @@ h3 {
     }
 }
 
+.navigation {
+    display: flex;
+}
+
+.li2 {
+    flex: 10%;
+}
+
+.li1{
+    flex: 90%;
+}
+
 .bars {
     visibility: hidden;
 }
 
 @media only screen and (max-width: 1040px) {
-    .list li {
+    .li1 {
         visibility: hidden;
     }
     .bars {
-        visibility: visible;
-        float: right;
+        visibility: visible; 
+    }
+    .li2{
+        flex: 1;
     }
 }

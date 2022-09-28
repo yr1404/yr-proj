@@ -144,13 +144,8 @@ h3 {
     z-index: 0;
 }
 
-<<<<<<< HEAD
 .test {
     margin-top: 50px;
-=======
-#test {
-    margin-top: 150px;
->>>>>>> ee02e27643abcf7e3cc7556fe7b5a79b3903757d
 }
 
 .row3 {
@@ -223,15 +218,16 @@ h3 {
 }
 
 .bars {
-    visibility: hidden;
+    display: none;
 }
 
 @media only screen and (max-width: 1040px) {
     .list li {
-        visibility: hidden;
+        display: none;
     }
     .bars {
-        visibility: visible;
+        display: block;
         float: right;
+        padding-right: 20px;
     }
 }

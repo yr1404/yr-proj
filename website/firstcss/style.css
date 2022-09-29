@@ -234,12 +234,13 @@ h3 {
 }
 
 @media only screen and (max-width: 1040px) {
-    .list li {
+    .li1 {
         display: none;
     }
     .bars {
         display: block;
         float: right;
         padding-right: 20px;
+        padding-top: 20px;
     }
 }
